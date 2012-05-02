@@ -1,0 +1,89 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "misho" >
+  <meta name="GENERATOR" content="VBDOX [1.0.24]" >
+  <script SRC="linkcss.js"></script>
+  <script SRC="langref.js"></script>
+  <title>dx_GFX_class:&nbsp;Frame</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>dx_GFX_class:&nbsp;Frame</TD></TR>
+</TABLE>
+<!-- ============ METHOD ENTRY ============ -->
+<H1>Frame</H1>
+<P>Procesa las llamadas a las funciones de dibujo y muestra en pantalla el contenido del backbuffer.
+
+<PRE class=syntax><B><font color="darkblue">&nbsp;Public</font><font color="darkblue">&nbsp;Function</font><b><i>&nbsp;Frame</i></b>(
+	&nbsp;<i>&nbsp;</i><font color="darkblue">Optional</font><i>&nbsp;Color</i><font color="darkblue">&nbsp;As&nbsp;Long,
+</font>	&nbsp;<i>&nbsp;</i><font color="darkblue">Optional</font><i>&nbsp;MaxFrames</i><font color="darkblue">&nbsp;As&nbsp;</font><font color="#00008B">Integer</font><font color="darkblue">,
+	  Optional</font><i>&nbsp;Clear</i><font color="darkblue">&nbsp;As&nbsp;Boolean = </font><font color="#FF00FF">True</font>&nbsp;)<font color="darkblue">&nbsp;As&nbsp;Long</font></B></PRE>
+<H4>Argumentos</H4>
+<DL>
+<DT><I>Color</I>
+<DD>
+
+ Optional.
+ <B>Long</B>.
+  Valor <a href="REF_ARGB.html">ARGB</a> que representa el color que se usara en el borrado de pantalla una vez finalizado el proceso de volcado de gráficos en pantalla. Si no se especifica valor alguno se toma el valor ARGB 0,0,0,0.
+
+</DD>
+<DT><I>MaxFrames</I>
+<DD>
+
+ Optional.<b> Integer</b>. Valor que representa el numero máximo de cuadros por 
+	segundo que alcanzara el programa. Si el valor es 0 el programa ejecutara 
+	tantos cuadros por segundo como pueda. Un valor aconsejable para lograr 
+	fluidez en pantalla suele ser 60 cuadros por segundo. 
+
+</DD>
+<dt><i>Clear</i><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Optional. <b>Boolean</b>. 
+Valor que indica si se limpia la pantalla antes de pintar.</dt>
+</DL>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Default:</b> True&nbsp;
+</p>
+<H4>Resultado</H4>
+<B>Long</B>&nbsp;-&nbsp; Devuelve <a href="dx_GFX_class.GFX_ErrorCodes.html">GFX_OK</a> si la función ha finalizado correctamente, 
+<a href="dx_GFX_class.GFX_ErrorCodes.html">GFX_DEVICELOST </a>si el control del dispositivo grafico se ha perdido, 
+<a href="dx_GFX_class.GFX_ErrorCodes.html">GFX_DEVICENOTRESET </a>si el dispositivo grafico no se puede recuperar y 
+<a href="dx_GFX_class.GFX_ErrorCodes.html">GFX_UNKNOWNERROR </a>si se produce cualquier otro error.
+
+<H4>Comentarios</H4>
+<P>Esta es la función clave de la clase grafica ya que es la encargada de 
+procesar todos los datos y las llamadas realizadas y volcar el resultado en 
+pantalla. Dicha función determina el contenido de un cuadro en pantalla y es la 
+responsable de realizar los cálculos de cuadros por segundo que devuelve la 
+propiedad <a href="dx_GFX_class.Get.FPS.html">FPS</a> <i>(&quot;Frames Per Second&quot;, 
+Cuadros por Segundo)</i>. Esta función solo puede ser llamada una vez en cada 
+vuelta del bucle principal del programa. Después de ejecutarse, esta función 
+limpia el contenido del backbuffer y así el de la pantalla preparándolo para las 
+nuevas llamadas a las funciones de dibujo que compondrán el siguiente cuadro en 
+pantalla.</P>
+<P>No es necesario introducir la instrucción <b>DoEvents</b> de <b>Visual Basic</b> 
+en el bucle principal del programa ya que <b>Frame</b> se encarga de hacer una 
+llamada automáticamente justo al terminar de ejecutarse para así refrescar la 
+pila de eventos del sistema operativo y evitar el cuelgue del programa.</P>
+<P>En caso de que la ventana donde se esta dibujando pierda el foco en modo a pantalla completa, ya sea por hacer una combinación de teclas como 
+<b>Alt+Tab</b> o por minimizar la ventana o por realizar un cambio de modo de 
+video mediante <a href="dx_GFX_class.DEVICE_SetDisplayMode.html">
+DEVICE_SetDisplayMode</a> por ejemplo, 
+<b>dx_lib32</b> perderá el control de dispositivo grafico. En cuanto esto ocurre 
+<b>dx_lib32</b> trata de recuperar el control del dispositivo aunque a veces puede suceder que esto no ocurra. En cuyo caso se debería reinicializar la clase 
+<b>dx_GFX</b>.
+</P>
+<H4>Vea también</H4>
+<P>
+<A HREF="dx_lib32.html">Proyecto dx_lib32 Descripción</A>
+<A HREF="dx_GFX_class.html">Clase dx_GFX_class Descripción</A>
+<A HREF="dx_GFX_class.html#public_props">dx_GFX_class Propiedades</A>
+<A HREF="dx_GFX_class.html#public_methods">dx_GFX_class Metodos</A>
+<B><A HREF="dx_GFX_class.Get.FPS.html">FPS&nbsp;(get)</A></B>
+<B><A HREF="dx_GFX_class.GFX_ErrorCodes.html">GFX_ErrorCodes</A></B>
+<DIV class=footer>dx_lib32 © 2004 - 2009 José Miguel Sánchez Fernández  <P>Generado el viernes 02 de enero del 2009 con VBDOX 1.0.34 (<A href="http://vbdox.sourceforge.net/">http://vbdox.sourceforge.net</A>)<BR>Copyright &copy; 2000 - 2001 M.Stamenov</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

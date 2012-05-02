@@ -1,0 +1,83 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "misho" >
+  <meta name="GENERATOR" content="VBDOX [1.0.24]" >
+  <script SRC="linkcss.js"></script>
+  <script SRC="langref.js"></script>
+  <title>dx_Video_Class:&nbsp;VIDEO_Play</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>dx_Video_Class:&nbsp;VIDEO_Play</TD></TR>
+</TABLE>
+<!-- ============ METHOD ENTRY ============ -->
+<H1>VIDEO_Play</H1>
+<P>Reproduce una secuencia de video.
+
+<PRE class=syntax><B><font color="darkblue">&nbsp;Public</font><font color="darkblue">&nbsp;Function</font><b><i>&nbsp;VIDEO_Play</i></b>(
+	&nbsp;<b><i>&nbsp;Video</i></b><font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Long</font>,
+	&nbsp;<b><i>&nbsp;X</i></b><font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Long</font>,
+	&nbsp;<b><i>&nbsp;Y</i></b><font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Long</font>,
+	&nbsp;<b><i>&nbsp;Width</i></b><font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Long</font>,
+	&nbsp;<b><i>&nbsp;Height</i></b><font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Long</font>&nbsp;)<font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Boolean</font></B></PRE>
+<H4>Argumentos</H4>
+<DL>
+<DT><I>Video</I></TD>
+<DD>
+
+ <B>Long</B>.
+  Identificador de la secuencia de video.
+
+</DD>
+<DT><I>X</I></TD>
+<DD>
+
+ <B>Long</B>.
+  Coordenada horizontal de la pantalla donde se renderizara el video.
+
+</DD>
+<DT><I>Y</I></TD>
+<DD>
+
+ <B>Long</B>.
+  Coordenada vertical de la pantalla donde se renderizara el video.
+
+</DD>
+<DT><I>Width</I></TD>
+<DD>
+
+ <B>Long</B>.
+  Ancho con el que se renderizara el video.
+
+</DD>
+<DT><I>Height</I></TD>
+<DD>
+
+ <B>Long</B>.
+  Alto con el que se renderizara el video.
+
+</DD>
+</DL>
+<H4>Resultado</H4>
+<B>Boolean</B>&nbsp;-&nbsp; Devuelve <b>Verdadero</b> si la operación se realiza con éxito.
+
+<H4>Comentarios</H4>
+<P>Esta clase esta diseñada para poder reproducir videos para cinematicas o introducciones en el programa. Dado que la implementación del mismo no permite integrarse a la perfección con la clase grafica se recomienda alternar el uso de una clase con la otra y se limita por ello la posibilidad de reproducir solo 1 video a la vez. Es aconsejable a la hora de reproducir una secuencia de video no llamar a la función 
+<a href="dx_GFX_class.Frame.html">Frame</a> de la clase grafica
+<a href="dx_GFX_class.html">dx_GFX</a>.
+</P>
+<H4>Vea también</H4>
+<P>
+<A HREF="dx_lib32.html">Proyecto dx_lib32 Descripción</A>
+<A HREF="dx_Video_Class.html">Clase dx_Video_Class Descripción</A>
+<A HREF="dx_Video_Class.html#public_props">dx_Video_Class Propiedades</A>
+<A HREF="dx_Video_Class.html#public_methods">dx_Video_Class Metodos</A>
+<B><A HREF="dx_Video_Class.VIDEO_Pause.html">VIDEO_Pause</A></B>
+<B><A HREF="dx_Video_Class.VIDEO_SetCurrentPosition.html">VIDEO_SetCurrentPosition</A></B>
+<DIV class=footer>dx_lib32 © 2004 - 2009 José Miguel Sánchez Fernández  <P>Generado el viernes 02 de enero del 2009 con VBDOX 1.0.34 (<A href="http://vbdox.sourceforge.net/">http://vbdox.sourceforge.net</A>)<BR>Copyright &copy; 2000 - 2001 M.Stamenov</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

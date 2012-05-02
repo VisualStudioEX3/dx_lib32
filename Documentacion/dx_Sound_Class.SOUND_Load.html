@@ -1,0 +1,50 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "misho" >
+  <meta name="GENERATOR" content="VBDOX [1.0.24]" >
+  <script SRC="linkcss.js"></script>
+  <script SRC="langref.js"></script>
+  <title>dx_Sound_Class:&nbsp;SOUND_Load</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>dx_Sound_Class:&nbsp;SOUND_Load</TD></TR>
+</TABLE>
+<!-- ============ METHOD ENTRY ============ -->
+<H1>SOUND_Load</H1>
+<P>Carga un archivo de audio desde disco como un efecto de sonido.
+
+<PRE class=syntax><B><font color="darkblue">&nbsp;Public</font><font color="darkblue">&nbsp;Function</font><b><i>&nbsp;SOUND_Load</i></b>(
+	&nbsp;<b><i>&nbsp;Filename</i></b><font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;String</font>&nbsp;)<font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Long</font></B></PRE>
+<H4>Argumentos</H4>
+<DL>
+<DT><I>Filename</I></TD>
+<DD>
+
+ <B>String</B>.
+  Nombre y ruta del archivo de sonido.
+
+</DD>
+</DL>
+<H4>Resultado</H4>
+<B>Long</B>&nbsp;-&nbsp; Devuelve el código identificador para el sonido en memoria, un valor comprendido entre 0 y el máximo permitido por el tipo Long. Si no se puede cargar el sonido se devuelve <I>
+<a href="dx_Sound_Class.SND_ErrorCodes.html">SND_FILENOTLOAD</a></I>.
+
+<H4>Comentarios</H4>
+<P>Esta función solo carga archivos de ondas (<b>WAVE</b>) *.WAV. Se pueden cargar tantos efectos de sonido como se deseen teniendo como limite la memoria del sistema.
+</P>
+<H4>Vea también</H4>
+<P>
+<A HREF="dx_lib32.html">Proyecto dx_lib32 Descripción</A>
+<A HREF="dx_Sound_Class.html">Clase dx_Sound_Class Descripción</A>
+<A HREF="dx_Sound_Class.html#public_props">dx_Sound_Class Propiedades</A>
+<A HREF="dx_Sound_Class.html#public_methods">dx_Sound_Class Metodos</A>
+<B><A HREF="dx_Sound_Class.SOUND_IsPlaying.html">SOUND_IsPlaying</A></B>
+<B><A HREF="dx_Sound_Class.SOUND_Pause.html">SOUND_Pause</A></B>
+<DIV class=footer>dx_lib32 © 2004 - 2009 José Miguel Sánchez Fernández  <P>Generado el viernes 02 de enero del 2009 con VBDOX 1.0.34 (<A href="http://vbdox.sourceforge.net/">http://vbdox.sourceforge.net</A>)<BR>Copyright &copy; 2000 - 2001 M.Stamenov</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

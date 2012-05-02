@@ -1,0 +1,70 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "misho" >
+  <meta name="GENERATOR" content="VBDOX [1.0.24]" >
+  <script SRC="linkcss.js"></script>
+  <script SRC="langref.js"></script>
+  <title>dx_GFX_class:&nbsp;MAP_CopyRects</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>dx_GFX_class:&nbsp;MAP_CopyRects</TD></TR>
+</TABLE>
+<!-- ============ METHOD ENTRY ============ -->
+<H1>MAP_CopyRects</H1>
+<P>Copia una serie de regiones de un <a href="REF_Maps.html">grafico</a> en otro.
+
+<PRE class=syntax><B><font color="darkblue">&nbsp;Public</font><font color="darkblue">&nbsp;Function</font><b><i>&nbsp;MAP_CopyRects</i></b>(
+	&nbsp;<b><i>&nbsp;SrcMap</i></b><font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Long</font>,
+	&nbsp;<b><i>&nbsp;DestMap</i></b><font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Long</font>,
+	&nbsp;<b><i>&nbsp;SrcRect</i></b>()<font color="darkblue">&nbsp;As</font><b><i>&nbsp;GFX_Rect</i></b>,
+	&nbsp;<b><i>&nbsp;DestPixel</i></b>()<font color="darkblue">&nbsp;As</font><b><i>&nbsp;Vertex</i></b>&nbsp;)<font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Boolean</font></B></PRE>
+<H4>Argumentos</H4>
+<DL>
+<DT><I>SrcMap</I></TD>
+<DD>
+
+ <B>Long</B>.
+  Identificador del grafico origen.
+
+</DD>
+<DT><I>DestMap</I></TD>
+<DD>
+
+ <B>Long</B>.
+  Identificador del grafico destino.
+
+</DD>
+<DT><I>SrcRect</I></TD>
+<DD>
+
+ <B><A href="dx_GFX_class.GFX_Rect.html">GFX_Rect</A></B>.
+ Lista de regiones que se copiaran del grafico origen al grafico destino. El 
+argumento se debe pasar apuntando al primer vector del array, el 0.</DD>
+<DT><I>DestPixel</I></TD>
+<DD>
+
+ <B><A href="dx_GFX_class.Vertex.html">Vertex</A></B>.
+ Lista de coordenadas donde se copiaran las regiones en el grafico destino. El argumento se debe pasar apuntando al primer vector del array, el 0.</DD>
+</DL>
+<H4>Resultado</H4>
+<B>Boolean</B>&nbsp;-&nbsp; Devuelve <b>Verdadero</b> si la operación se ha realizado con éxito.
+
+<H4>Comentarios</H4>
+<P>No se respeta el <a href="REF_ColorKey.html">ColorKey</a> de los gráficos en esta operación.
+</P>
+<H4>Vea también</H4>
+<P>
+<A HREF="dx_lib32.html">Proyecto dx_lib32 Descripción</A>
+<A HREF="dx_GFX_class.html">Clase dx_GFX_class Descripción</A>
+<A HREF="dx_GFX_class.html#public_props">dx_GFX_class Propiedades</A>
+<A HREF="dx_GFX_class.html#public_methods">dx_GFX_class Metodos</A>
+<B><A HREF="dx_GFX_class.MAP_AdvCopyRectsToSurf.html">MAP_AdvCopyRectsToSurf</A></B>
+<B><A HREF="dx_GFX_class.MAP_CopyRectsToSurf.html">MAP_CopyRectsToSurf</A></B>
+<DIV class=footer>dx_lib32 © 2004 - 2009 José Miguel Sánchez Fernández  <P>Generado el viernes 02 de enero del 2009 con VBDOX 1.0.34 (<A href="http://vbdox.sourceforge.net/">http://vbdox.sourceforge.net</A>)<BR>Copyright &copy; 2000 - 2001 M.Stamenov</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "misho" >
+  <meta name="GENERATOR" content="VBDOX [1.0.24]" >
+  <script SRC="linkcss.js"></script>
+  <script SRC="langref.js"></script>
+  <title>dx_GFX_class:&nbsp;DRAW_MapEx</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>dx_GFX_class:&nbsp;DRAW_VertexMap</TD></TR>
+</TABLE>
+<!-- ============ METHOD ENTRY ============ -->
+<H1>DRAW_VertexMap</H1>
+<P>Función avanzada de <a href="dx_GFX_class.DRAW_Map.html">DRAW_Map</a>. Dibuja 
+un grafico en pantalla con efectos definiendo la posición absoluta de los 
+vértices.
+
+<PRE class=syntax><B><font color="darkblue">&nbsp;Public</font><font color="darkblue">&nbsp;Sub</font><b><i>&nbsp;DRAW_VertexMap</i></b>(
+	&nbsp;<b><i>&nbsp;Map</i></b><font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Long</font>,
+	&nbsp;<b><i>&nbsp;</i></b><i>VertexData()</i><font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;</font><font color="#00008B">Vertex</font>,
+	&nbsp;<i>&nbsp;VertexSpecular</i><font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Long</font>,
+	&nbsp;<b><i>&nbsp;Z</i></b><font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Long</font>,
+	&nbsp;<b><i>&nbsp;AlphaBlendMode</i></b><font color="darkblue">&nbsp;As</font><b><i>&nbsp;Blit_Alpha</i></b>,
+	&nbsp;<b><i>&nbsp;Mirror</i></b><font color="darkblue">&nbsp;As</font><b><i>&nbsp;Blit_Mirror</i></b>,
+	&nbsp;<b><i>&nbsp;Filter</i></b><font color="darkblue">&nbsp;As</font><b><i>&nbsp;Blit_Filter</i></b>)</B></PRE>
+<H4>Argumentos</H4>
+<DL>
+<DT><I>Map</I></TD>
+<DD>
+
+ <B>Long</B>.
+  Identificador del grafico.
+
+</DD>
+<DT><I>VertexData</I></TD>
+<DD>
+
+ <b>Vertex</b>. Array que contiene la información de los vértices de la textura.</DD>
+<DT><I>VertexSpecular</I></TD>
+<DD>
+
+ <B>Long</B>. Valores specular para indicar la iluminación a cada vértice.</DD>
+<DT><I>Z</I></TD>
+<DD>
+
+ <B>Long</B>.
+  Coordenada de profundidad de dibujo.
+
+	Para saber como funciona este parámetro leer información acerca del
+<a href="REF_ZBuffer.html">ZBuffer</a>.</DD>
+<DT><I>AlphaBlendMode</I></TD>
+<DD>
+
+ <B><A href="dx_GFX_class.Blit_Alpha.html">Blit_Alpha</A></B>.
+  Modo de opacidad.
+
+</DD>
+<DT><I>Mirror</I></TD>
+<DD>
+
+ <B><A href="dx_GFX_class.Blit_Mirror.html">Blit_Mirror</A></B>.
+  Modo de espejado.
+
+</DD>
+<DT><I>Filter</I></TD>
+<DD>
+
+ <B><A href="dx_GFX_class.Blit_Filter.html">Blit_Filter</A></B>.
+  Filtro de suavizado que se utilizara para dibujar el grafico.
+
+</DD>
+</DL>
+<H4>Comentarios</H4>
+Esta función esta diseñada para permitir optimizaciones en implementaciones 
+externas dado que no realiza calculo alguno en cuanto a transformaciones de los 
+vértices ni rotaciones ya que esta función esta diseñada para recibir toda la 
+información lista para procesarse. Los vértices se definen en orden de las 
+agujas del reloj tal y como muestra la siguiente ilustración:<br>
+<P align="center"><img border="0" src="images/vertexMapCycle.gif" width="180" height="175" align="bottom"></P>
+<P>Esta función puede resultar útil si implementaciones 
+externas a dx_lib32 necesitan dibujar gráficos en pantalla aplicando 
+transformaciones de forma continuada permitiendo evitar cálculos continuos en 
+cada llamada a la función implementado tablas de valores que almacenen los 
+cambios puntuales de dibujo, realizando estos cálculos de forma externa y solo 
+en el instante de aplicar las transformaciones. A su vez, esta función es la 
+única de las 4 versiones disponibles que permite dibujar un sprite posicionando 
+sus vértices en cualquier posición libre, pudiendo generar efectos de 
+deformaciones si se aplica en conjunto, por ejemplo ondulaciones submarinas o 
+efectos &quot;lupa&quot; en un mapa de tiles. <br>
+</P>
+<H4>Vea también</H4>
+<P>
+<A HREF="dx_lib32.html">Proyecto dx_lib32 Descripción</A>
+<A HREF="dx_GFX_class.html">Clase dx_GFX_class Descripción</A>
+<A HREF="dx_GFX_class.html#public_props">dx_GFX_class Propiedades</A>
+<A HREF="dx_GFX_class.html#public_methods">dx_GFX_class Metodos</A>
+<B><A HREF="dx_GFX_class.DRAW_Map.html">DRAW_Map</A></B>
+<B><A HREF="dx_GFX_class.DRAW_Pixel.html">DRAW_Pixel</A></B>
+<DIV class=footer>dx_lib32 © 2004 - 2009 José Miguel Sánchez Fernández  <P>Generado el viernes 02 de enero del 2009 con VBDOX 1.0.34 (<A href="http://vbdox.sourceforge.net/">http://vbdox.sourceforge.net</A>)<BR>Copyright &copy; 2000 - 2001 M.Stamenov</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

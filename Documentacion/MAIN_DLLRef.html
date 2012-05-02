@@ -1,0 +1,87 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "misho" >
+  <meta name="GENERATOR" content="VBDOX [1.0.24]" >
+  <script SRC="linkcss.js"></script>
+  <script SRC="langref.js"></script>
+  <title>Como enlazar dx_lib32 con Visual Basic 6.0</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>Como enlazar dx_lib32 con Visual 
+	Basic 6.0 y Visual Basic .NET</TD></TR>
+</TABLE>
+<!-- ============ PROJECT ============ -->
+<br><h1>
+Como enlazar dx_lib32 con Visual Basic 6.0 y Visual Basic .NET</h1>
+<b><br>
+Crear la referencia en el proyecto<br>
+</b>
+<br>Para poder acceder a los métodos y propiedades de <b>dx_lib32</b> primero 
+hay que crear una referencia al componente mediante la ventana de referencias, 
+ubicada en el menú <b>Proyecto/Referencias </b>del entorno de desarrollo de <b>
+Visual Basic 6.0</b> o en la opción <b>Agregar Referencia...</b> del menú 
+contextual, mediante clic derecho, del nodo proyecto del explorador de 
+soluciones del entorno de <b>Visual Studio 200x</b> o <b>Visual Basic .NET 
+Express</b>, en la pestaña<b> COM</b>. Una vez allí buscar el componente mediante el nombre <b>
+dx_lib32 2.2.0 - Librería para desarrollo de juegos en Visual Basic 6.0 con 
+DirectX 8.1</b>.<b><br>
+<br>
+Importante</b>: para poder crear la referencia al componente este debe estar 
+instalado en el sistema y registrado correctamente. Para instalaciones 
+personalizadas, se recomienda instalar el componente en el directorio de Sistema
+<i>(System)</i> de Windows mediante el paquete distribuible <b>
+dxlib32v220runtime.exe</b> que se incluye en el paquete de instalación de 
+dx_lib32.<p>Después 
+simplemente hay que crear las instancias de cada clase de la siguiente forma:</p>
+<table border="1" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse" bgcolor="#FFFFCC" bordercolor="#000000">
+	<tr>
+		<td><font face="Lucida Console"><font color="#000080">Dim</font> m_GFX <font color="#000080">As</font> 
+		dx_GFX_class <font color="#008000">' Creamos una variable objeto donde 
+		instanciaremos la clase grafica dx_GFX.</font></font><p>
+		<font face="Lucida Console"><font color="#000080">
+		Set</font> m_GFX <font color="#000080">=</font> <font color="#000080">
+		New</font> dx_GFX_class <font color="#008000">' Inicializamos la 
+		variable objeto creando la instancia de la clase.</font></font></td>
+	</tr>
+</table>
+<p>O bien de esta forma:</p>
+<table border="1" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse" bgcolor="#FFFFCC" bordercolor="#000000">
+	<tr>
+		<td><font face="Lucida Console"><font color="#000080">Dim</font> m_GFX <font color="#000080">As 
+		New</font> 
+		dx_GFX_class <font color="#008000">' Creamos e inicializamos la 
+		variable objeto creando la instancia de la clase.</font></font></td>
+	</tr>
+</table>
+<p>Una vez creada las instancias se realiza la llamada a la función <b>Init</b> 
+de la clase para inicializar los subsistemas de esta, configurar y habilitar los 
+métodos de la misma para su uso. La clase <a href="dx_System_class.html">
+dx_System</a> no necesita ser inicializada. </p>
+<p><b><br>
+Terminar la ejecucion de dx_lib32<br>
+</b><br>
+Para terminar y cerrar los subsistemas de una clase se realizara la llamada al 
+método <b>Terminate</b> de la misma <i>(excepto con la clase
+<a href="dx_System_class.html">dx_System</a>)</i>. Este método se encarga de 
+destruir los recursos en memoria que la clase haya creado y de cerrar los 
+procesos activos que este haya llamado. Una vez terminada la clase se recomienda 
+destruir la instancia de la misma de la siguiente forma:</p>
+<table border="1" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse" bgcolor="#FFFFCC" bordercolor="#000000">
+	<tr>
+		<td><font face="Lucida Console"><font color="#000080">
+		Set</font> m_GFX <font color="#000080">=</font> <font color="#000080">
+		Nothing</font> <font color="#008000">' Destruimos la instancia de la clase 
+		liberando la memoria ocupada por la misma.</font></font></td>
+	</tr>
+</table>
+<DIV class=footer>
+	<p>dx_lib32 © 2004 - 2009 José Miguel Sánchez Fernández 
+	</p>
+	<P>Generado el viernes 02 de enero del 2009 con VBDOX 1.0.34 (<A href="http://vbdox.sourceforge.net/">http://vbdox.sourceforge.net</A>)<BR>Copyright &copy; 2000 - 2001 M.Stamenov</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

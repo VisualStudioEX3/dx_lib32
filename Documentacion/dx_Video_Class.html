@@ -1,0 +1,67 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "misho" >
+  <meta name="GENERATOR" content="VBDOX [1.0.24]" >
+  <script SRC="linkcss.js"></script>
+  <script SRC="langref.js"></script>
+  <title>dx_Video_Class</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>dx_Video_Class</TD></TR>
+</TABLE>
+<!-- ============ MODULE ============ -->
+<h2>dx_Video_Class</h2>
+<br>Clase de funciones de reproducción de video. Esta clase ofrece una simple 
+pero cómoda interfaz de llamadas para la gestión y reproducción de secuencias de 
+video que nos permite controlar todos los parámetros de la reproducción.<p>Esta 
+interfaz soporta formatos nativos como el <b>AVI</b> y <b>MPEG</b>, y puede 
+soportar cualquier otro formato de video instalando los codecs necesarios, por 
+ejemplo formatos <b>AVI</b> comprimidos con <b>DivX</b>.</p>
+<table cellspacing="0" cellpadding="0"></table>
+<!-- ============ CONSTANTS ============ -->
+<!-- ============ TYPES ============ -->
+<br><h4><a name="public_types"></a>Enumeraciones:</h4><table><thead><tr valign="top"><th align="left" width="48%">Nombre</th><th align="left" width="52%">Descripción</th></tr></thead><tbody><tr valign="top"><td width="48%">
+	<a href="dx_Video_Class.VIDEO_ErrorCodes.html">VIDEO_ErrorCodes</a></td><td width="52%">Códigos de error.
+&nbsp;</td></tr></tbody></table>
+<!-- ============ PROPERTIES ============ -->
+<br><h4><a name="public_props"></a>Propiedades:</h4><table><thead><tr valign="top"><th align="left" width="48%">Nombre</th><th align="left" width="52%">Descripción</th></tr></thead><tbody><tr valign="top"><td width="48%"><a href="dx_Video_Class.Get.hwnd.html">hwnd</a>&nbsp;(get)</td><td width="52%">Devuelve el identificador de la ventana que esta usando para ejecutar las rutinas de la clase.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.Get.VIDEO_Count.html">VIDEO_Count</a>&nbsp;(get)</td><td width="52%">Devuelve el numero de efectos de secuencias de video en memoria.
+&nbsp;</td></tr></tbody></table>
+<!-- ============ METHODS ============ -->
+<br><h4><a name="public_methods"></a>Metodos:</h4><table><thead><tr valign="top"><th align="left" width="48%">Nombre</th><th align="left" width="52%">Descripción</th></tr></thead><tbody><tr valign="top"><td width="48%"><a href="dx_Video_Class.Init.html">Init</a></td><td width="52%">Inicializa el sistema de video.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.Terminate.html">Terminate</a></td><td width="52%">Cierra el sistema de video y los subsistemas de la clase.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_GetCurrentPosition.html">VIDEO_GetCurrentPosition</a></td><td width="52%">Devuelve la posición de lectura de la secuencia de video.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_GetDuration.html">VIDEO_GetDuration</a></td><td width="52%">Devuelve en milisegundos la duración de una secuencia de video.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_GetPan.html">VIDEO_GetPan</a></td><td width="52%">Devuelve el nivel del balance de la secuencia de video.
+&nbsp;</td></tr>
+	<tr>
+		<td width="48%"><a href="dx_Video_Class.VIDEO_GetRate.html">VIDEO_GetRate</a></td><td width="52%">Devuelve la velocidad de reproducción de la secuencia de video.
+&nbsp;</td>
+	</tr>
+	<tr valign="top"><td width="48%">
+		<a href="dx_Video_class.VIDEO_GetSize.html">VIDEO_GetSize</a></td><td width="52%">
+		Devuelve las dimensiones originales del video.&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_GetViewPort.html">VIDEO_GetViewPort</a></td><td width="52%">Devuelve la posición y escala de la secuencia de video que se esta reproduciendo.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_GetVolume.html">VIDEO_GetVolume</a></td><td width="52%">Devuelve el nivel del volumen de la secuencia de video.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_IsPlaying.html">VIDEO_IsPlaying</a></td><td width="52%">Comprueba si la secuencia de video esta en reproducción.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_Load.html">VIDEO_Load</a></td><td width="52%">Carga un archivo de video desde disco como una secuencia de video.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_Pause.html">VIDEO_Pause</a></td><td width="52%">Detiene la reproducción de una secuencia de video manteniendo la posición de lectura.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_Play.html">VIDEO_Play</a></td><td width="52%">Reproduce una secuencia de video.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_SetCurrentPosition.html">VIDEO_SetCurrentPosition</a></td><td width="52%">Establece la posición de lectura de la secuencia de video.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_SetPan.html">VIDEO_SetPan</a></td><td width="52%">Establece el nivel del balance de la secuencia de video.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_SetSpeed.html">VIDEO_SetSpeed</a></td><td width="52%">Establece la velocidad de reproducción de la secuencia de sonido.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_SetViewPort.html">VIDEO_SetViewPort</a></td><td width="52%">Establece la posición y escala de la secuencia de video que se esta reproduciendo.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_SetVolume.html">VIDEO_SetVolume</a></td><td width="52%">Establece el nivel del volumen de la secuencia de video.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_Stop.html">VIDEO_Stop</a></td><td width="52%">Detiene la reproducción de una secuencia de video y resetea la posicion de lectura.
+&nbsp;</td></tr><tr valign="top"><td width="48%"><a href="dx_Video_Class.VIDEO_Unload.html">VIDEO_Unload</a></td><td width="52%">Descarga una secuencia de video de la memoria.
+&nbsp;</td></tr></tbody></table>
+<!-- ============ DECLARATIONS ============ -->
+<!-- ============ EVENTS ============ -->
+<!-- ============ OTHER ============ -->
+<DIV class=footer>dx_lib32 © 2004 - 2009 José Miguel Sánchez Fernández  <P>Generado el viernes 02 de enero del 2009 con VBDOX 1.0.34 (<A href="http://vbdox.sourceforge.net/">http://vbdox.sourceforge.net</A>)<BR>Copyright &copy; 2000 - 2001 M.Stamenov</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

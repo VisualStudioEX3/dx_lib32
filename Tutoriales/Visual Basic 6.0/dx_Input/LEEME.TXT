@@ -1,0 +1,7 @@
+Cambios importantes en dx_Input
+-------------------------------
+
+En la clase dx_Input se ha corregido finalmente el bug de las funciones _HIT para detectar pulsaciones únicas.
+Ahora en vez de ser un proceso automático se ha añadido un método Update() a la clase que ha de ser llamado al 
+principio del bucle de actualización del juego (es similar a la función Frame() de dx_GFX_Class pero en vez de 
+ser llamada al final del bucle se llama al principio, antes de cualquier llamada a la clase).

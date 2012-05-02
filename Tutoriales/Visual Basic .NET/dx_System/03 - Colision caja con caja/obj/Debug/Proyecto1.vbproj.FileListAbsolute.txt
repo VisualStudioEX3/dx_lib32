@@ -1,0 +1,4 @@
+C:\Users\EX3\Desktop\TLSA Renovatio\TLSA.NET\dx_lib32\Tutoriales\Visual Basic .NET\dx_System\03 - Colision caja con caja\Proyecto1.NET\obj\Debug\Interop.dx_lib32.dll
+C:\Users\EX3\Desktop\TLSA Renovatio\TLSA.NET\dx_lib32\Tutoriales\Visual Basic .NET\dx_System\03 - Colision caja con caja\Proyecto1.NET\obj\Debug\Proyecto1.vbproj.ResolveComReference.cache
+C:\Users\EX3\Desktop\TLSA Renovatio\TLSA.NET\dx_lib32\Tutoriales\Visual Basic .NET\dx_System\03 - Colision caja con caja\obj\Debug\Interop.dx_lib32.dll
+C:\Users\EX3\Desktop\TLSA Renovatio\TLSA.NET\dx_lib32\Tutoriales\Visual Basic .NET\dx_System\03 - Colision caja con caja\obj\Debug\Proyecto1.vbproj.ResolveComReference.cache

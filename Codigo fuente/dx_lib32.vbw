@@ -1,0 +1,10 @@
+Global_Mod = 44, 44, 580, 492, C
+CDSoundVolume_Mod = 134, 157, 670, 605, 
+DirectShowEvent_Mod = 66, 66, 602, 514, 
+dx_Sound_Class = 55, 138, 1064, 750, 
+dx_Input_Class = 0, 269, 1009, 540, 
+dx_Video_Class = 88, 96, 630, 544, 
+dx_System_Class = 49, 126, 618, 549, Z
+dx_GFX_Class = 0, 0, 1009, 612, 
+DirectInputEvent_Mod = 0, 269, 1009, 540, 
+CFontPreview = 161, 161, 1197, 682, 

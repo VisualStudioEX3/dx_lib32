@@ -1,0 +1,64 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+  <meta name="Author" content = "misho" >
+  <meta name="GENERATOR" content="VBDOX [1.0.24]" >
+  <script SRC="linkcss.js"></script>
+  <script SRC="langref.js"></script>
+  <title>dx_Sound_Class:&nbsp;MUSIC_Play</title>
+</head>
+<BODY TOPMARGIN="0">
+<TABLE CLASS="buttonbarshade" CELLSPACING=0><TR><TD>&nbsp;</TD></TR></TABLE>
+<TABLE CLASS="buttonbartable" CELLSPACING=0>
+<TR ID="hdr"><TD CLASS="runninghead" NOWRAP>dx_Sound_Class:&nbsp;MUSIC_Play</TD></TR>
+</TABLE>
+<!-- ============ METHOD ENTRY ============ -->
+<H1>MUSIC_Play</H1>
+<P>Reproduce una secuencia de música.
+
+<PRE class=syntax><B><font color="darkblue">&nbsp;Public</font><font color="darkblue">&nbsp;Function</font><b><i>&nbsp;MUSIC_Play</i></b>(
+	&nbsp;<b><i>&nbsp;Music</i></b><font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Long</font>,
+	&nbsp;<font color="darkblue">&nbsp;Optional</font><b><i>&nbsp;Buffer</i></b><font color="darkblue">&nbsp;As</font><b><i>&nbsp;Sound_Buffer</i></b>&nbsp;=<b><i>&nbsp;Primary_Buffer</i></b>,
+	&nbsp;<font color="darkblue">&nbsp;Optional</font><b><i>&nbsp;Looping</i></b><font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Boolean</font>&nbsp;)<font color="darkblue">&nbsp;As</font><font color="darkblue">&nbsp;Boolean</font></B></PRE>
+<H4>Argumentos</H4>
+<DL>
+<DT><I>Music</I></TD>
+<DD>
+
+ <B>Long</B>.
+ Identificador de la secuencia de música.</DD>
+<DT><I>Buffer</I></TD>
+<DD>
+
+ Optional.
+ <B><A href="dx_Sound_Class.Sound_Buffer.html">Sound_Buffer</A></B>.
+ Buffer donde se reproducirá la secuencia de música. Por defecto se usa el buffer primario.<P><B>Default:</B>  Primary_Buffer</P>
+</DD>
+<DT><I>Looping</I></TD>
+<DD>
+
+ Optional.
+ <B>Boolean</B>.
+  Indica si se reproducirá la secuencia de música en bucle.
+
+</DD>
+</DL>
+<H4>Resultado</H4>
+<B>Boolean</B>&nbsp;-&nbsp; Devuelve <b>Verdadero</b> si la operación se realiza con éxito.
+
+<H4>Comentarios</H4>
+<P>Las funciones de secuencias de música están diseñadas para dar soporte a formatos avanzados de audio e implementado para dar posibilidad de reproducir una secuencia de música de fondo. Se permite reproducir dos secuencias de música como máximo, permitiendo así poder hacer efectos de transición entre dos secuencias de música (efecto 'Fade') por ejemplo.
+</P>
+<H4>Vea también</H4>
+<P>
+<A HREF="dx_lib32.html">Proyecto dx_lib32 Descripción</A>
+<A HREF="dx_Sound_Class.html">Clase dx_Sound_Class Descripción</A>
+<A HREF="dx_Sound_Class.html#public_props">dx_Sound_Class Propiedades</A>
+<A HREF="dx_Sound_Class.html#public_methods">dx_Sound_Class Metodos</A>
+<B><A HREF="dx_Sound_Class.MUSIC_Pause.html">MUSIC_Pause</A></B>
+<B><A HREF="dx_Sound_Class.MUSIC_SetCurrentPosition.html">MUSIC_SetCurrentPosition</A></B>
+<DIV class=footer>dx_lib32 © 2004 - 2009 José Miguel Sánchez Fernández  <P>Generado el viernes 02 de enero del 2009 con VBDOX 1.0.34 (<A href="http://vbdox.sourceforge.net/">http://vbdox.sourceforge.net</A>)<BR>Copyright &copy; 2000 - 2001 M.Stamenov</DIV>
+<DIV class=footer style="COLOR: #000000; FONT-SIZE: 90%">
+</body>
+</html>

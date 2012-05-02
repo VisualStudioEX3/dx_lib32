@@ -1,2 +1,0 @@
-C:\Users\EX3\Desktop\TLSA Renovatio\TLSA.NET\dx_lib32\Tutoriales\Visual Basic .NET\dx_GFX\07 - Dibujar una cadena de texto\Proyecto1.NET\obj\Debug\Interop.dx_lib32.dll
-C:\Users\EX3\Desktop\TLSA Renovatio\TLSA.NET\dx_lib32\Tutoriales\Visual Basic .NET\dx_GFX\07 - Dibujar una cadena de texto\Proyecto1.NET\obj\Debug\Proyecto1.vbproj.ResolveComReference.cache

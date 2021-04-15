@@ -1,0 +1,3 @@
+# Discard documentation and tutorial projects files for language stats:
+Documentacion/* linguist-documentation
+Tutoriales/* linguist-documentation

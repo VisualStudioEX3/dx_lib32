@@ -1,3 +1,3 @@
-# Discard documentation and tutorial projects files for language stats:
-Documentacion/* linguist-documentation
-Tutoriales/* linguist-documentation
+# Discard all paths except the source code folder:
+* -linguist-detectable
+Codigo Fuente/* linguist-detectable

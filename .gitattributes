@@ -1,3 +1,4 @@
-# Discard all paths except the source code folder:
-* -linguist-detectable
+# Discard all paths except the source code folder to force language stats to VBA:
 Codigo Fuente/* linguist-detectable
+Documentacion/* -linguist-detectable
+Tutoriales/* -linguist-detectable
